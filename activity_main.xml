@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="parent"
-    android:layout_height="parent"
-    tools:context=".MainActivity">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="parent"
-        android:layout_height="parent"
-        android:layout_margin="16dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="45dp">
 
         <TableRow>
 
             <TextView
-                android:layout_height="parent"
+                android:layout_height="match_parent"
                 android:padding="8dp"
-                android:text="Bill_total"
+                android:text="Enter the amount "
                 android:textSize="24sp" />
 
             <EditText
@@ -23,34 +25,12 @@
                 android:layout_span="3"
                 android:inputType="number|numberDecimal"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text="0"
                 android:textSize="24sp" />
         </TableRow>
 
-        <TableRow>
 
-            <TextView
-                android:padding="8dp"
-                android:text=""
-                android:textSize="24sp" />
-
-            <TextView
-                android:padding="8dp"
-                android:text="10%"
-                android:textSize="24sp" />
-
-            <TextView
-                android:padding="8dp"
-                android:text="15%"
-                android:textSize="24sp" />
-
-            <TextView
-                android:padding="8dp"
-                android:text="20%"
-                android:textSize="24sp" />
-        </TableRow>
-
-        <TableRow>
+        <TableRow android:layout_height="44dp">
 
             <TextView
                 android:layout_gravity="end"
@@ -61,19 +41,19 @@
             <TextView
                 android:id="@+id/tip1"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text=""
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/tip2"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text="0"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/tip3"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text=""
                 android:textSize="24sp" />
         </TableRow>
 
@@ -88,19 +68,19 @@
             <TextView
                 android:id="@+id/total1"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text=""
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/total2"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text="0"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/total3"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text=""
                 android:textSize="24sp" />
         </TableRow>
 
@@ -124,8 +104,8 @@
 
             <TextView
                 android:id="@+id/seekval"
+                android:layout_width="60dp"
                 android:padding="8dp"
-                android:text="0%"
                 android:textSize="24sp" />
 
         </TableRow>
@@ -141,7 +121,7 @@
             <TextView
                 android:id="@+id/tipx"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text="0"
                 android:textSize="24sp" />
 
             <TextView
@@ -152,7 +132,7 @@
             <TextView
                 android:id="@+id/totalx"
                 android:padding="8dp"
-                android:text="0.0"
+                android:text="0"
                 android:textSize="24sp" />
         </TableRow>
     </TableLayout>
