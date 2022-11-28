@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/amountTextBillEdit"
+        android:layout_width="410dp"
+        android:layout_height="61dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:autofillHints="Enter the text"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:hint="@string/amount_enter"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="@dimen/default_textView_padding"
+        android:textColorHint="#546E7A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:padding="@dimen/default_textView_padding"
+        android:text="@string/percentTextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/amountPercent"
+        android:layout_width="294dp"
+        android:layout_height="81dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="number"
+        android:max="100"
+        android:padding="@dimen/default_textView_padding"
+        android:progress="50"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="99dp"
+        android:layout_height="71dp"
+        android:layout_row="2"
+        android:layout_columnSpan="2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:maxLength="6"
+        android:padding="@dimen/default_textView_padding"
+        android:text="@string/tip"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/amountTip"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/amountTip"
+        android:layout_width="303dp"
+        android:layout_height="74dp"
+        android:layout_row="2"
+        android:layout_columnSpan="2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_bright"
+        android:maxLength="6"
+        android:padding="@dimen/default_textView_padding"
+        android:text="@string/amountTip"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="99dp"
+        android:layout_height="66dp"
+        android:layout_row="3"
+        android:layout_columnSpan="2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:maxLength="6"
+        android:padding="@dimen/default_textView_padding"
+        android:text="@string/Bill_amount_textView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/amountTotal"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="@dimen/default_textView_padding"
+        android:text="@string/amountTotal"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/number_people_textView"
+        android:layout_width="143dp"
+        android:layout_height="2dp"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/number_people_spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:contentDescription="@string/sizeParty"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="-21dp"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/radioGroupLabel_textView"
+        android:layout_width="147dp"
+        android:layout_height="9dp"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:text="@string/group_radio"
+        android:textColor="#00796B"
+        android:textSize="@dimen/textSize_perPerson"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+    <RadioGroup
+        android:id="@+id/group_radio"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/tipRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <RadioButton
+            android:id="@+id/totalRadio"
+            android:layout_width="10dp"
+            android:layout_height="34dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelPerPerson_textView"
+        android:layout_width="192dp"
+        android:layout_height="8dp"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/totalPerPerson_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize_perPerson"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/none_radio"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
